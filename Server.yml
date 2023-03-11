@@ -58,7 +58,7 @@ Resources:
           sudo apt-get install apache2 -y
           sudo systemctl start apache2.service
           cd /var/www/html
-          sudo aws s3 cp s3://udacity-project2-bucket123/index.html .
+          sudo aws s3 cp s3://udacity-project2-bucket123/index.html 
 
       ImageId: ami-0557a15b87f6559cf 
       #KeyName: 

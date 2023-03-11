@@ -29,14 +29,3 @@ Resources:
       Roles:
         - Ref: "IAMRoleWebApp"
 
-Outputs:
-  IAMRoleWebApp:
-    Description: "Allows EC2 instances to communicate with S3 bucket"
-    Value: !Ref IAMWebAppS3IP
-    Export:
-      Name: !Sub ${EnvironmentName}-MY-IAM
-  IAMRoleWebAppArn:
-    Description: Iam Instance Profile Arn
-    Value: !GetAtt IAMRoleWebApp.Arn
-    Export:
-      Name: !Sub ${EnvironmentName}-IAM-ARN
